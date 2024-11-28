@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
+    <title>Ejercicio 4</title>
 </head>
 
 <body>
-    <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+    </canvas>
     <script>
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
-        ctx.strokeStyle = 'blue';
-        ctx.lineWidth = 5;
-        ctx.strokeRect(50, 50, 150, 100);
+        ctx.strokeStyle = 'red';
+        ctx.lineWidth = 2; 
+        ctx.beginPath();
+        ctx.arc(200, 200, 100, 0, 2 * Math.PI);
         ctx.stroke();
     </script>
 </body>
