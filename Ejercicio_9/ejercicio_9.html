@@ -10,12 +10,14 @@
     <script>
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
-        ctx.strokeStyle = 'green';
+        ctx.strokeStyle = 'blue';
+        ctx.fillStyle = 'blue';
         ctx.lineWidth = 5;
         ctx.moveTo(50,50);
         ctx.lineTo(200,50);
         ctx.lineTo(50,150);
         ctx.lineTo(50,47.5);
+        ctx.fill();
         ctx.stroke();
     </script>
 </body>
