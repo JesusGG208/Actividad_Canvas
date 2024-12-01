@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 9</title>
+    <title>Ejercicio 10</title>
 </head>
 <body>
     <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
     <script>
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
-        ctx.strokeStyle = 'blue';
-        ctx.fillStyle = 'blue';
-        ctx.lineWidth = 5;
-        ctx.moveTo(50,50);
-        ctx.lineTo(200,50);
-        ctx.lineTo(50,150);
-        ctx.lineTo(50,47.5);
-        ctx.fill();
-        ctx.stroke();
-    </script>
+        ctx.font = "bold 40px Arial";
+        ctx.fillStyle = "blue";
+        ctx.fillText("Ejercicio Final", 10, 100);
+    </script>  
 </body>
 </html>
